@@ -1,0 +1,37 @@
+### **Time Complexity and Space Complexity - Big-O Notation**
+
+#### **1. Time Complexity**
+Time complexity describes how the runtime of an algorithm grows relative to the input size \( n \). It helps in analyzing the efficiency of an algorithm.
+
+#### **Common Time Complexities**
+| Complexity | Notation | Description |
+|------------|---------|-------------|
+| Constant | \( O(1) \) | Execution time is constant, independent of input size. |
+| Logarithmic | \( O(\log n) \) | Execution time grows logarithmically with input size. |
+| Linear | \( O(n) \) | Execution time grows proportionally with input size. |
+| Linearithmic | \( O(n \log n) \) | Common in efficient sorting algorithms like Merge Sort. |
+| Quadratic | \( O(n^2) \) | Nested loops over the input lead to rapid growth. |
+| Cubic | \( O(n^3) \) | Often seen in three-level nested loops. |
+| Exponential | \( O(2^n) \) | Very inefficient, usually in brute force solutions. |
+| Factorial | \( O(n!) \) | Extremely inefficient, usually for brute-force permutations. |
+
+#### **2. Space Complexity**
+Space complexity refers to the amount of memory an algorithm needs in terms of input size \( n \).
+
+- **Auxiliary Space:** Extra memory apart from input storage.
+- **In-Place Algorithm:** Uses \( O(1) \) or \( O(\log n) \) extra space.
+
+#### **3. Big-O Notation**
+Big-O notation expresses the worst-case scenario of an algorithm's growth rate.
+
+- **Ignore constants and lower-order terms:**  
+  Example: \( O(3n^2 + 5n + 2) \) simplifies to \( O(n^2) \).
+- **Drop non-dominant terms:**  
+  Example: \( O(n + \log n) \) simplifies to \( O(n) \) as \( n \) dominates for large values.
+
+#### **4. Practical Examples**
+- **\( O(1) \)**: Accessing an element in an array.
+- **\( O(\log n) \)**: Binary search.
+- **\( O(n) \)**: Traversing an array.
+- **\( O(n \log n) \)**: Merge Sort, Quick Sort (average case).
+- **\( O(n^2) \)**: Bubble Sort, Selection Sort.
